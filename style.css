@@ -1,0 +1,829 @@
+@font-face {
+    font-family: fontawesome;
+    src: url(./fonts/FontAwesome.otf);
+}
+@font-face {
+    font-family: Gotham-Medium;
+    src: url(./fonts/Gotham-Medium.otf);
+}
+@font-face {
+    font-family: Gotham-Thin;
+    src: url(./fonts/Gotham-Thin.otf);
+}
+@font-face {
+    font-family: Gotham-Ultra;
+    src: url(./fonts/Gotham-Ultra.otf);
+}
+@font-face {
+    font-family: SVN-Athena;
+    src: url(./fonts/SVN-Athena_0.ttf);
+}
+@font-face {
+    font-family: SVN-Artful Beauty;
+    src: url(./fonts/SVN-Artful\ Beauty.ttf);
+}
+@font-face {
+    font-family: MULI-SEMIBOLD;
+    src: url(./fonts/MULI-SEMIBOLD.TTF);
+}
+@font-face {
+    font-family: MULI-REGULAR;
+    src: url(./fonts/MULI-REGULAR.TTF);
+}
+@font-face {
+    font-family: MULI-BOLD;
+    src: url(./fonts/MULI-BOLD.TTF);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gotham-Medium';
+}
+
+
+body{
+    background: #fff;
+}
+.d-flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.align-items-center{
+    align-items: center;
+}
+.wrapper{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 1300px){
+    .container{
+        max-width: 1280px;
+    }
+}
+/* end container */
+
+/* navbar */
+.menu-top{
+    padding: 17px 0;
+    margin-bottom: 12px;
+    position: relative;
+}
+/* end navbar */
+
+/* menu navbar */
+ul.navbar-nav li{
+    margin-left: 88px;
+}
+
+
+ul.navbar-nav li:hover{
+    cursor: pointer;
+}
+
+ul.navbar-nav li a{
+    color: #000;
+    font-family: 'Athena';
+    font-size: 16px;
+    padding: 0.5rem 0 !important;
+}
+
+@media only screen and (max-width: 768px){
+    ul.navbar-nav li{
+        margin-left: 44px;
+        text-align: right;
+    }
+
+    .navbar-button{
+        position: absolute;
+        right: 0%;
+        top: 25%;
+    }
+
+}
+/* end menu navbar */
+
+/* ------------------Trang chủ---------------------------- */
+
+/* index_box1 */
+.index_box1{
+    
+    height: 728px;
+    
+}
+@media only screen and (max-width: 600px) {
+    .index_box1{
+         max-width: 100%;
+    }
+ }
+ .index_box1 img{
+    width: 100%;
+    /* position: absolute; */
+ }
+ .index_head1 {
+    position: relative;
+ }
+.index_head1 h3{
+    font-family: SVN-Athena;
+    color: #000;
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 36px;
+    top: 22%;
+    left: 25%;
+    height: 33px;
+    padding:  auto ;
+}
+.index_head1 h2{
+    font-family: SVN-Artful Beauty;
+    color: #43782b;
+    font-size: 128.59px;
+    position: absolute;
+    top: 32%;
+    left: 25%;
+    height: 93px;
+    padding:  auto ;
+}
+ .index_head1 p{
+    font-family: SVN-Athena;
+    color: #000;
+    font-size: 18px;
+    position: absolute;
+    top: 42%;
+    left: 25%;
+    width: 360px;
+    height: 37px;
+    padding: 40px 50px 60px 0;
+}
+ .index_head1 button{
+    text-transform: uppercase;
+    background: #aabc44;
+    font-family: SVN-Athena;
+    font-size: 24px;
+    position: absolute;
+    top: 58%;
+    left: 25%;
+    height: 60px;
+    width: 210px;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+.index_head1 button:hover{
+    box-shadow: 0px 0px 40px #bd945f;
+    background: #bd945f;
+    color: #fff;
+}
+
+
+/* index_box2 */
+.index_box2{
+    padding: 180px 0;
+    background: url(./images/trangchu/spnoibat.png);
+    background-size: cover;
+}
+.index_box2-title{
+    margin-top: 45px;
+    margin-bottom: 80px;
+}
+.index_box2 .wrapper h1{
+    font-family: SVN-Athena;
+    color: #000;
+    font-size: 48px;
+    height: 52px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.index_box2 .index_box2-item img{
+    width: 100%;
+}
+.index_box2 .index_box2-item h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: SVN-Athena;
+    color: #000;
+    font-size: 24px;
+    height: 40px;
+    margin-top: 32px;
+}
+.index_box2 .index_box2s .index_box2-item{
+    width: calc(25% - 24px);
+    transition: all .3s linear;
+    cursor: pointer;
+}
+.index_box2 .index_box2s .index_box2-item:hover{
+    box-shadow: 10px 10px 20px #aabc44;
+    color: #aabc44;
+}
+.index_box2 .index_box2s .slick-prev{
+    background-color: #aabc44;
+}
+.index_box2 .index_box2s .slick-next{
+    background-color: #aabc44;
+}
+
+
+/* index_box3 */
+.index_box3{
+    padding: 72px 0;
+    background: url(./images/trangchu/Gioithieu.png);
+    background-size: cover;
+    background-position: 100%;
+}
+.index_box3-title{
+    margin-top: 200px;
+    margin-bottom: 60px;
+}
+.index_box3 .index_box3-title h1{
+    font-family: SVN-Athena;
+    color: #000;
+    font-size: 48px;
+    height: 45px; 
+    text-align: center; 
+    text-transform: uppercase; 
+}
+@media only screen and (max-width: 600px) {
+    .index_box3{
+         max-width: 100%;
+    }
+ }
+.index_box3 .index_box3-content h2{
+    font-family: SVN-Artful Beauty;
+    color: #43782b;
+    font-size: 127.51px;
+    height: 129px;
+    padding:  auto ;
+}
+.index_box3 .index_box3-content p{
+    color: #000;
+    font-size: 16px;
+    height: 101px;
+    width: 536px;
+}
+.index_box3 .index_box3-content button{
+    font-family: SVN-Athena;
+    color: #000;
+    font-size: 24px;
+    height: 60px; 
+    width: 215px;
+    text-align: center;
+    background: #aabc44;
+    margin-top: 35px;
+    transition: all .3s linear;
+}
+.index_box3 .index_box3-content button:hover{
+    box-shadow: 0px 0px 40px #0acaec;
+    color: aqua;
+    background: #fff;
+    cursor: pointer;
+}
+.index_box3 .index_box3-content{
+    padding: 100px 0;
+}
+
+
+
+/* index_box4 */
+.index_box4{
+    height: 660px;
+    padding: 80px 0;
+    background: url(./images/trangchu/Group\ 5.png);
+    background-size: cover;
+    background-position: 0%;
+}
+
+
+
+.index_box4 .index_box4-title h1{
+    font-family: SVN-Athena;
+    color: #000;
+    font-size: 48px;
+    height: 45px; 
+    text-align: center; 
+    text-transform: uppercase;
+}
+.index_box4 .index_box4-content{
+    margin-top: 64px;
+}
+.index_box4 .index_box4-content .index_box4-item{
+    width: calc(20% - 8px);
+    height: 386px;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+.index_box4 .index_box4-content .index_box4-item:hover{
+    box-shadow: 0px 0px 40px #0acaec;
+}
+@media only screen and (max-width: 600px) {
+    .index_box4 .index_box4-content .index_box4-item{
+         max-width: 100%;
+    }
+ }
+.index_box4 .index_box4-content .index_box4-item .index_imgage{
+    padding: 100%;
+    margin-top: 9px;
+    margin-bottom: 20px;
+}
+.index_box4 .index_box4-content .index_box4-item h2{
+    font-family: SVN-Athena;
+    color: #000;
+    font-size: 24px;
+    text-align: center;
+}
+.index_box4 .index_box4-content .index_box4-item p{
+    font-family: SVN-Athena;
+    color: #000;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 12px;
+}
+
+
+/* index_box5 */
+.index_box5{
+    height: 382px;
+    background: url(./images/trangchu/muangay.png);
+    background-size: cover;
+    background-position: 0%;
+    padding: 52px 0;
+}
+@media only screen and (max-width: 600px) {
+    .index_box5{
+         max-width: 100%;
+    }
+ }
+.index_box5 .index_box5-title{
+    margin-top: 52px;
+    margin-bottom: 35px;
+    height: 116px;
+}
+.index_box5 .index_box5-title h1{
+    font-family: SVN-Athena;
+    color: #000;
+    font-size: 48px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.index_box5 .index_box5-ib input{
+    height: 60px;
+    width: 820px;
+    margin-left: 110px;
+    font-family: SVN-Athena;
+    color: #000;
+    font-size: 24px;
+}
+.index_box5 .index_box5-ib button{
+    margin-left: 33px;
+    width: 218px;
+    height: 64px;
+    font-family: SVN-Athena;
+    color: #000;
+    font-size: 24px;
+    background: #aabc44;
+    transition: all .3s linear;
+}
+.index_box5 .index_box5-ib button:hover{
+    box-shadow: 0px 0px 40px #0acaec;
+    background: #f505e1;
+    color: aquamarine;
+    cursor: pointer;
+}
+
+
+/* --------------------Giới thiệu----------------------- */
+
+/* intro_box1 */
+.intro_box1{
+    height: 750px;
+    background: url(./images/Gioithieu/banner.png);
+    background-size: cover;
+    
+}
+@media only screen and (max-width: 600px) {
+    .intro_box1{
+         max-width: 100%;
+    }
+ }
+.intro_box1 .wrapper .intro_banner h3{
+    font-family: SVN-Athena;
+    color: #aabc44;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+.intro_box1 .wrapper .intro_banner h2{
+    font-family: SVN-Athena;
+    color: #000;
+    font-size: 80px;
+    text-transform: uppercase;
+}
+.intro_box1 .wrapper .intro_banner{
+    padding: 266px 375px 0 108px;
+}
+
+/* intro_box2 */
+.intro_box2{
+    background: url(./images/Gioithieu/2.png);
+    background-size: cover;
+    margin-bottom: 40px;
+}
+@media only screen and (max-width: 600px) {
+    .intro_box2{
+         max-width: 100%;
+    }
+ }
+.intro_box2 .wrapper .wrapper1 .intro_box2-banner{
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+.intro_box2 .wrapper .wrapper1 .intro_box2-banner h1{
+    font-family: SVN-Athena;
+    color: #000;
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.intro_box2 .wrapper .wrapper1 .intro_box2-info{
+    margin-top: 50px ;
+}
+.intro_box2 .wrapper .wrapper1 .intro_box2-info img{
+    width: 100%;
+}
+.intro_box2 .wrapper .wrapper1 .intro_box2-info p{
+    font-family: SVN-Athena;
+    color: #000;
+    font-size: 24px;
+    text-align: justify;
+}
+
+
+/* -----------------------------Sản phẩm--------------------------------------- */
+
+/* pro_box1 */
+.pro_box1{
+    height: 400px;
+    background: url(./images/Sanpham/banner.png);
+    background-size: cover;
+}
+.pro_box1 .wrapper h1{
+    font-family: SVN-Athena;
+    color: #000;
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.pro_box1 .wrapper{
+    padding-top: 170px;
+}
+
+/* pro_box2 */
+.pro_box2{
+    background: url(./images/Sanpham/background.png);
+    background-size: cover;
+}
+.bredcrum{
+    padding: 14px 0;
+}
+.bredcrum i{
+    margin: 0 8px;
+    
+}
+.pro_box2 .bredcrum select{
+    border: none;
+}
+.bredcrum a{
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+}
+.pro_box2 .wrapper .pro_box2-title button {
+    width: 10%;
+    height: fit-content;
+    margin-left: calc(80% - 16px);
+}
+.pro_box2 .wrapper .pro_box2-title h1{
+    font-family: SVN-Athena;
+    color: #000;
+    font-size: 50px;
+    padding-bottom: 32px;
+    width: 100%;
+}
+.pro_box2 .pro_box2-list1 .pro_content{
+    padding-bottom: 27px;
+}
+.pro_box2 .pro_box2-list1 .pro_list1{
+    padding-bottom: 27px;
+}
+.pro_box2 .pro_box2-list1 .value{
+    padding-bottom: 27px;
+}
+.pro_box2 .pro_menu-left .pro_box2-list1 .pro_content h2{
+    font-family: SVN-Athena;
+    color: #000;
+    font-size: 24px;
+}
+.pro_box2 .pro_menu-left .pro_box2-list1 .pro_list1 li{
+    font-family: SVN-Athena;
+    color: #000;
+    font-size: 18px;
+}
+.pro_box2 .pro_box2-list1 .pro_value p{
+    font-family: SVN-Athena;
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.pro_box2 .pro_menu-left{
+    margin-right: 108px;
+}
+.pro_box2 .pro_menu-right{
+    width: 960px;
+}
+.pro_box2 .pro_menu-right .pro_item .pro_new p{
+    font-family: SVN-Athena;
+    color: #000;
+    font-size: 12px;
+    font-weight: 24px;
+    width: 50px;
+    height: 25px;
+    background: #d4f59b;
+    text-align: center;
+    text-transform: uppercase;
+}
+.pro_box2 .pro_menu-right .pro_item .pro_new i{
+    color: #69922b;
+}
+.pro_box2 .pro_menu-right .pro_item .pro_new h4{
+    font-family: SVN-Athena;
+    font-size: 24px;
+    color: #69922b;
+ }
+.pro_box2 .pro_menu-right .pro_item h2{
+    font-family: SVN-Athena;
+    color: #000;
+    font-size: 24px;
+    text-align: center;
+}
+.pro_box2 .pro_menu-right .pro_item button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: #bfeede;
+    font-family: SVN-Athena;
+    font-size: 24px;
+    color: red;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+.pro_box2 .pro_menu-right .pro_item button:hover{
+    background-color: #dddddd;
+    color: #5c14e0;
+    cursor: pointer;
+}
+.pro_box2 .pro_menu-right .pro_item h3{
+    font-family: glyphicons-halfling-regular;
+    color: #000;
+    font-size: 24px;
+    text-align: center;
+}
+.pro_box2 .pro_menu-right .pro_item select{
+    border: none;
+}
+.pro_box2 .wrapper .pro_menu-right .container .row .pro_item{
+    margin: 44px 0;
+    width: calc(33% - 16px);
+    transition: all .3s linear;
+}
+/* ---------------Cart-------------- */
+.cart{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.cart h2{
+    margin-bottom: 20px;
+}
+.cart table{
+    width: 100%;
+}
+.cart table thead tr th:first-child{
+    text-align: left;
+}
+.cart table tr td{
+    border-bottom: 1px solid #dddddd;
+    padding: 12px 0;
+}
+.cart table thead tr th:last-child{
+    text-align: right;
+}
+.cart table tbody tr td:last-child{
+    text-align: right;
+}
+.cart button{
+    margin-top: 12px;
+    height: 30px;
+    padding: 0 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: tomato;
+}
+.cart{
+    position: fixed;
+    height: 100vh;
+    width: 400px;
+    right: 0;
+    top: 0;
+    background-color: #d7f0e8;
+    padding: 12px 20px;
+    overflow-y: scroll;
+    right: -100%;
+    /* transition: all 0.5s ease; */
+}
+.cart i{
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+.cart-icon i{
+    cursor: pointer;
+}
+
+
+
+
+.pro_box2 .wrapper .pro_menu-right .container .row .pro_item:hover{
+    box-shadow: 0px 0px 40px rgba(194, 235, 245, 0.651);
+}
+.pro_box2 .filter{
+    font-family: glyphicons-halfling-regular;
+    color: #000;
+    font-size: 18px;
+    text-align: center;
+}
+
+.pro_box2 .pro_menu-right .container .pro_next-page input{
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    color: #69922b;
+    transition: all .3s linear;
+}
+.pro_box2 .pro_menu-right .container .pro_next-page input:hover{
+    border: #69922b;
+}
+.pro_box2 .pro_menu-right .container .pro_next-page{
+    margin-left: 40%;
+}
+
+
+/* ---------------------------------Tin tức------------------------------- */
+/* news_box1 */
+.news_box1{
+    margin: 60px 0;
+    background: url(./images/Tintuc/background.png);
+    background-size: cover;
+    
+}
+.news_box1 .wrapper .news_content{
+    padding: 42px 0;
+}
+.news_box1 .wrapper .news_content h2{
+    font-family: SVN-Athena;
+    color: #000;
+    font-size: 48px;
+    text-align: center;
+    text-transform: uppercase;
+}
+@media only screen and (min-width: 1200px){
+   .container{
+       max-width: 1280px;
+    }
+}
+.news_box1 .container .news_image{
+    width: 100%;
+}
+.news_box1 .container .news_info{
+    padding: 20px 0;
+}
+.news_box1 .container .news_info h2{
+    font-family: SVN-Athena;
+    color: #899a29;
+    font-size: 25px;
+    width: 365px;
+    height: 80px;
+}
+.news_box1 .container .news_info p{
+    font-family: SVN-Athena;
+    color: #000;
+    font-size: 14px;
+    width: 365px;
+}
+.news_box1 .container .news_item{
+    transition: all .3s linear;
+    margin-bottom: 15px;
+    padding: 32px;
+}
+.news_box1 .container .news_item:hover{
+    box-shadow: 0px 0px 40px #bd945f;
+}
+
+.news_box1 .container .news_next-page input{
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    color: #69922b;
+    transition: all .3s linear;
+}
+.news_box1 .container .news_next-page input:hover{
+    border: #69922b;
+}
+.news_box1 .container .news_next-page{
+    margin-left: 45%;
+}
+
+
+/*------------------------- Liên hệ ---------------------------------*/
+
+/* contact_box1 */
+.contact_box1{
+    height: 1080px;
+    background: url(./images/Lienhe/background.png);
+    background-size: cover;
+}
+.contact_box1 .wrapper .contact_form{
+    padding-top: 230px;
+    padding-left: 750px;
+}
+.contact_box1 .wrapper .contact_form h1{
+    font-family: SVN-Athena;
+    color: #000;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.contact_box1 .wrapper .contact_form input{
+    height: 55px;
+    width: 535px;
+    margin-top: 20px;
+    font-family: SVN-Athena;
+    color: #000;
+    font-size: 18px;
+}
+.contact_box1 .wrapper .contact_form button{
+    margin-top: 20px;
+    width: 125px;
+    height: 55px;
+    font-family: SVN-Athena;
+    color: #000;
+    font-size: 24px;
+    background: #899a29;
+    transition: all .3s linear;
+}
+.contact_box1 .wrapper .contact_form button:hover{
+    background: #06eea1;
+    color: rgb(247, 1, 206);
+    box-shadow: 0px 0px 40px #bd945f;
+    cursor: pointer;
+}
+
+
+
+/* footer */
+footer{
+    background: url(./images/trangchu/Layer\ 20.png);
+    background-size: cover;
+}
+footer .end li{
+    font-family: SVN-Athena;
+    color: #000;
+    font-size: 18px;
+}
+footer .end h1{
+    font-family: SVN-Athena;
+    color: #000;
+    font-size: 24px;
+    margin-bottom: 28px;
+    margin-top: 22px;
+}
+footer .end img{
+    margin-top: 22px;
+}
+footer .end .end1{
+    margin-top: 32px;
+}
+footer .end ul img{
+    width: 140px;
+    height: 23px;
+    margin: 0;
+}
+footer .end .end2{
+    font-family: SVN-Athena;
+    color: #000;
+    font-size: 12px;
+}

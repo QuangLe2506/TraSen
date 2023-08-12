@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg menu-top">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./images/trangchu/Bách dIệp.png" alt="Logo Trà sen Bách Diệp">
+                </a>
+                <div class="collapse navbar-collapse justify-content-end myCollapse" id="">
+                    <ul class="navbar-nav">
+                        <li class="nav-item menu-item"><a class="nav-link" href="./trangchu.html">TRANG CHỦ</a></li>
+                        <li class="nav-item menu-item"><a class="nav-link" href="./gioithieu.html">GIỚI THIỆU</a></li>
+                        <li class="nav-item menu-item"><a class="nav-link" href="./sanpham.html">SẢN PHẨM</a></li>
+                        <li class="nav-item menu-item"><a class="nav-link" href="./Tintuc.html">TIN TỨC</a></li>
+                        <li class="nav-item menu-item"><a class="nav-link" href="./lienhe.html">LIÊN HỆ</a></li>    
+                    </ul>
+                </div>
+                <button class="navbar-toggler navbar-button" data-toggle="collapse" data-toggle="collapse"
+                    data-target="#collapse-target">
+                    <span class="navbar-toggler-icon">
+                        <i class="fas fa-bars" style=" font-size:28px;"></i>
+                    </span>
+                </button>
+            </nav>
+            <div class="collapse navbar-collapse justify-content-end myCollapse" id="collapse-target">
+                <ul class="navbar-nav">
+                    <li class="nav-item menu-item"><a class="nav-link" href="./trangchu.html">TRANG CHỦ</a></li>
+                    <li class="nav-item menu-item"><a class="nav-link" href="./gioithieu.html">GIỚI THIỆU</a></li>
+                    <li class="nav-item menu-item"><a class="nav-link" href="./sanpham.html">SẢN PHẨM</a></li>
+                    <li class="nav-item menu-item"><a class="nav-link" href="./Tintuc.html">TIN TỨC</a></li>
+                    <li class="nav-item menu-item"><a class="nav-link" href="./lienhe.html">LIÊN HỆ</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="pro_box1">
+        <div class="wrapper">
+            <div>
+            <div class="pro_box1-banner">
+                <h1 class="wow animate__animated animate__heartBeat">Sản phẩm</h1>
+            </div>
+        </div>
+    </section>
+    <section class="pro_box2">
+        <div class="wrapper">
+            <div class="bredcrum wow animate__animated animate__fadeInLeft">
+                <span><a href="">Trang chủ</a></span>
+                <span><i class="fa-solid fa-angle-right"></i></span>
+                <span><a href="">Sản phẩm</a></span>
+            </div>
+            <div class="pro_box2-title d-flex">
+                <h1 class="wow animate__animated animate__fadeInLeft">Sản phẩm</h1>
+                <button class="cart_icon"><i style="font-weight: bold;" class="fa-solid fa-cart-shopping"></i><span>0</span><sup>đ</sup></button>
+                <hr>
+            </div>
+            <div class="bredcrum d-flex justify-between">
+                <a class="wow animate__animated animate__fadeInLeft" href="">Bộ lọc sản phẩm</a>
+                <h3 class="filter">
+                    <select name="Filter" id="Filter">
+                        <option value="no"> </option>
+                        <option value="no1">Thứ tự mặc định</option>
+                        <option value="no2">Giá thấp đến cao</option>
+                        <option value="no3">Giá cao đến thấp</option>
+                        <option value="no4">Xếp theo đánh giá</option>
+                        <option value="no5">Xếp theo phổ biến</option>
+                    </select>
+                </h3>
+            </div>
+            <div class="d-flex">
+                <div class="pro_menu-left">
+                    <div class="pro_box2-list1">
+                        <div class="pro_content">
+                            <h2 class=" wow animate__animated animate__fadeInLeft">Loại sản phẩm</h2>
+                        </div>
+                        <div class="pro_list1">
+                            <ul class=" wow animate__animated animate__fadeInLeft">
+                                <li>
+                                    <input type="checkbox" id="ck1">
+                                    <label for="ck1">Trà xanh Thái Nguyên</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="ck2">
+                                    <label for="ck2">Trà Ô long</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="ck3">
+                                    <label for="ck3">Trà Shan tuyết</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="ck4">
+                                    <label for="ck4">Trà sen</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="ck5">
+                                    <label for="ck5">Trà lài</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="ck6">
+                                    <label for="ck6">Trà thảo dược</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="ck7">
+                                    <label for="ck7">Dụng cụ pha trà</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="ck8">
+                                    <label for="ck8">Nước pha trà</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pro_box2-list1">
+                        <div class="pro_content">
+                            <h2 class=" wow animate__animated animate__fadeInLeft">Giá thành</h2>
+                        </div>
+                       <div class=" wow animate__animated animate__fadeInLeft">
+                        <input type="range" name="num" id="num" min="50000" max="20000000" value="10000">
+                        <div class="pro_value">
+                            <p>Từ 50.000<sup>đ</sup> đến 200.000<sup>đ</sup></p>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="pro_box2-list1">
+                        <div class="pro_content">
+                            <h2 class=" wow animate__animated animate__fadeInLeft">Thương hiệu</h2>
+                        </div>
+                        <div class="pro_list1">
+                            <ul class=" wow animate__animated animate__fadeInLeft">
+                                <li>
+                                    <input type="checkbox" id="ck1">
+                                    <label for="ck1">Trà Tân Cương Xanh</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="ck2">
+                                    <label for="ck2">Trà Sen Tây Hồ</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="ck3">
+                                    <label for="ck3">Trà Lộc Tân</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro_menu-right">
+                    <div class="container">
+                        <div class="row justify-around">
+                            <div class="pro_item col-lg-4 col-sm-6">
+                                <div>
+                                    <div class="pro_new d-flex justify-between">
+                                        <div class="d-flex">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <h4>(17)</h4>
+                                        </div>
+                                        <p>New</p>
+                                    </div>
+                                    <a href="">
+                                        <img src="./images/Sanpham/trashantuyet.png" alt="">
+                                    </a>
+                                </div>
+                                <div>
+                                    <h2>Trà Shan Tuyết</h2>
+                                </div>
+                                <button>Mua ngay</button>
+                                <div class="d-flex justify-between">
+                                    <h3><span class="price">50.000</span><sup>đ</sup></h3>
+                                    <h3>
+                                        <select name="Number" id="Number">
+                                            <option value="no1"><span class="type">200</span><sub>g</sub></option>
+                                            <option value="no2"><span class="type">300</span><sub>g</sub></option>
+                                            <option value="no3"><span class="type">500</span><sub>g</sub></option>
+                                            <option value="no4"><span class="type">1000</span><sub>g</sub></option>
+                                        </select>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="pro_item  col-lg-4 col-sm-6">
+                                <div>
+                                    <div class="pro_new d-flex justify-between">
+                                        <div class="d-flex">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <h4>(27)</h4>
+                                        </div>
+                                        <p>New</p>
+                                    </div>
+                                    <a href="">
+                                        <img src="./images/Sanpham/traolong.png" alt="">
+                                    </a>
+                                    
+                                </div>
+                                <div>
+                                    <h2>Trà Ô Long</h2>
+                                </div>
+                                <button>Mua ngay</button>
+                                <div class="d-flex justify-between">
+                                    <h3><span class="price">70.000</span><sup>đ</sup></h3>
+                                    <h3>
+                                        <select name="Number" id="Number">
+                                            <option value="no1"><span class="type">200</span><sub>g</sub></option>
+                                            <option value="no2"><span class="type">300</span><sub>g</sub></option>
+                                            <option value="no3"><span class="type">500</span><sub>g</sub></option>
+                                            <option value="no4"><span class="type">1000</span><sub>g</sub></option>
+                                        </select>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="pro_item  col-lg-4 col-sm-6">
+                                <div>
+                                    <div class="pro_new d-flex justify-between">
+                                        <div class="d-flex">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <h4>(27)</h4>
+                                        </div>
+                                        <p>New</p>
+                                    </div>
+                                    <a href="">
+                                        <img src="./images/Sanpham/trabup.png" alt="">
+                                    </a>
+                                    
+                                </div>
+                                <div>
+                                    <h2>Trà Búp</h2>
+                                </div>
+                                <button>Mua ngay</button>
+                                <div class="d-flex justify-between">
+                                    <h3><span class="price">60.000</span><sup>đ</sup></h3>
+                                    <h3>
+                                        <select name="Number" id="Number">
+                                            <option value="no1"><span class="type">200</span><sub>g</sub></option>
+                                            <option value="no2"><span class="type">300</span><sub>g</sub></option>
+                                            <option value="no3"><span class="type">500</span><sub>g</sub></option>
+                                            <option value="no4"><span class="type">1000</span><sub>g</sub></option>
+                                        </select>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="pro_item col-lg-4 col-sm-6">
+                                <div>
+                                    <div class="pro_new d-flex justify-between">
+                                        <div class="d-flex">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <h4>(17)</h4>
+                                        </div>
+                                        <p>New</p>
+                                    </div>
+                                    <a href="">
+                                        <img src="./images/Sanpham/trashantuyet.png" alt="">
+                                    </a>
+                                </div>
+                                <div>
+                                    <h2>Trà Shan Tuyết</h2>
+                                </div>
+                                <button>Mua ngay</button>
+                                <div class="d-flex justify-between">
+                                    <h3><span class="price">50.000</span><sup>đ</sup></h3>
+                                    <h3>
+                                        <select name="Number" id="Number">
+                                            <option value="no1"><span class="type">200</span><sub>g</sub></option>
+                                            <option value="no2"><span class="type">300</span><sub>g</sub></option>
+                                            <option value="no3"><span class="type">500</span><sub>g</sub></option>
+                                            <option value="no4"><span class="type">1000</span><sub>g</sub></option>
+                                        </select>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="pro_item col-lg-4 col-sm-6">
+                                <div>
+                                    <div class="pro_new d-flex justify-between">
+                                        <div class="d-flex">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <h4>(27)</h4>
+                                        </div>
+                                        <p>New</p>
+                                    </div>
+                                    <a href="">
+                                        <img src="./images/Sanpham/traolong.png" alt="">
+                                    </a>
+                                    
+                                </div>
+                                <div>
+                                    <h2>Trà Ô Long</h2>
+                                </div>
+                                <button>Mua ngay</button>
+                                <div class="d-flex justify-between">
+                                    <h3><span class="price">70.000</span><sup>đ</sup></h3>
+                                    <h3>
+                                        <select name="Number" id="Number">
+                                            <option value="no1"><span class="type">200</span><sub>g</sub></option>
+                                            <option value="no2"><span class="type">300</span><sub>g</sub></option>
+                                            <option value="no3"><span class="type">500</span><sub>g</sub></option>
+                                            <option value="no4"><span class="type">1000</span><sub>g</sub></option>
+                                        </select>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="pro_item  col-lg-4 col-sm-6">
+                                <div>
+                                    <div class="pro_new d-flex justify-between">
+                                        <div class="d-flex">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <h4>(27)</h4>
+                                        </div>
+                                        <p>New</p>
+                                    </div>
+                                    <a href="">
+                                        <img src="./images/Sanpham/trabup.png" alt="">
+                                    </a>
+                                    
+                                </div>
+                                <div>
+                                    <h2>Trà Búp</h2>
+                                </div>
+                                <button>Mua ngay</button>
+                                <div class="d-flex justify-between">
+                                    <h3><span class="price">60.000</span><sup>đ</sup></h3>
+                                    <h3>
+                                        <select name="Number" id="Number">
+                                            <option value="no1"><span class="type">200</span><sub>g</sub></option>
+                                            <option value="no2"><span class="type">300</span><sub>g</sub></option>
+                                            <option value="no3"><span class="type">500</span><sub>g</sub></option>
+                                            <option value="no4"><span class="type">1000</span><sub>g</sub></option>
+                                        </select>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="pro_item col-lg-4 col-sm-6">
+                                <div>
+                                    <div class="pro_new d-flex justify-between">
+                                        <div class="d-flex">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <h4>(17)</h4>
+                                        </div>
+                                        <p>New</p>
+                                    </div>
+                                    <a href="">
+                                        <img src="./images/Sanpham/trashantuyet.png" alt="">
+                                    </a>
+                                </div>
+                                <div>
+                                    <h2>Trà Shan Tuyết</h2>
+                                </div>
+                                <button>Mua ngay</button>
+                                <div class="d-flex justify-between">
+                                    <h3><span class="price">50.000</span><sup>đ</sup></h3>
+                                    <h3>
+                                        <select name="Number" id="Number">
+                                            <option value="no1"><span class="type">200</span><sub>g</sub></option>
+                                            <option value="no2"><span class="type">300</span><sub>g</sub></option>
+                                            <option value="no3"><span class="type">500</span><sub>g</sub></option>
+                                            <option value="no4"><span class="type">1000</span><sub>g</sub></option>
+                                        </select>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="pro_item col-lg-4 col-sm-6">
+                                <div>
+                                    <div class="pro_new d-flex justify-between">
+                                        <div class="d-flex">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <h4>(27)</h4>
+                                        </div>
+                                        <p>New</p>
+                                    </div>
+                                    <a href="">
+                                        <img src="./images/Sanpham/traolong.png" alt="">
+                                    </a>
+                                    
+                                </div>
+                                <div>
+                                    <h2>Trà Ô Long</h2>
+                                </div>
+                                <button>Mua ngay</button>
+                                <div class="d-flex justify-between">
+                                    <h3><span class="price">70.000</span><sup>đ</sup></h3>
+                                    <h3>
+                                        <select name="Number" id="Number">
+                                            <option value="no1"><span class="type">200</span><sub>g</sub></option>
+                                            <option value="no2"><span class="type">300</span><sub>g</sub></option>
+                                            <option value="no3"><span class="type">500</span><sub>g</sub></option>
+                                            <option value="no4"><span class="type">1000</span><sub>g</sub></option>
+                                        </select>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="pro_item col-lg-4 col-sm-6">
+                                <div>
+                                    <div class="pro_new d-flex justify-between">
+                                        <div class="d-flex">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <h4>(27)</h4>
+                                        </div>
+                                        <p>New</p>
+                                    </div>
+                                    <a href="">
+                                        <img src="./images/Sanpham/trabup.png" alt="">
+                                    </a>
+                                    
+                                </div>
+                                <div>
+                                    <h2>Trà Búp</h2>
+                                </div>
+                                <button>Mua ngay</button>
+                                <div class="d-flex justify-between">
+                                    <h3><span class="price">60.000</span><sup>đ</sup></h3>
+                                    <h3>
+                                        <select name="Number" id="Number">
+                                            <option value="no1"><span class="type">200</span><sub>g</sub></option>
+                                            <option value="no2"><span class="type">300</span><sub>g</sub></option>
+                                            <option value="no3"><span class="type">500</span><sub>g</sub></option>
+                                            <option value="no4"><span class="type">1000</span><sub>g</sub></option>
+                                        </select>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="pro_next-page align-items-center">
+                            <input type="button" value="1">
+                            <input type="button" value="2">
+                            <input type="button" value="3">
+                            <input type="button" value="4">
+                            <input type="button" value=">">
+                        </p>
+                    </div>
+                    <div class="cart">
+                        <i class="fas fa-times"></i>
+                        <h2>Giỏ hàng của bạn</h2>
+                        <form action="">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Sản phẩm</th>
+                                        <th>Giá</th>
+                                        <!-- <th>Loại</th> -->
+                                        <th>Số lượng</th>
+                                        <th>Chọn</th>
+                                    </tr>
+                                </thead>
+                                <Tbody>
+                                    <!-- <tr>
+                                        <td style="display: flex; align-items: center;"><img style="width: 70px;" src="./images/Sanpham/trabup.png" alt="">Trà búp</td>
+                                        <td><p><span>70.000</span><sup>đ</sup></p></td>
+                                        <td><input style="width: 30px; outline: none;" type="number" value="1" min="1"></td>
+                                        <td><p><a href="">200</a><sub>g</sub></p></td>
+                                        <td style="cursor: pointer;">Xoá</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="display: flex; align-items: center;"><img style="width: 70px;" src="./images/Sanpham/trabup.png" alt="">Trà búp</td>
+                                        <td><p><span>70.000</span><sup>đ</sup></p></td>
+                                        <td><input style="width: 30px; outline: none;" type="number" value="1" min="1"></td>
+                                        <td style="cursor: pointer;">Xoá</td>
+                                    </tr> -->
+                                </Tbody>
+                            </table>
+                            <div style="text-align: right;" class="price-total">
+                                <p style="font-weight: bold;">Tổng tiền: <span>0</span><sup>đ</sup></p>
+                            </div>
+                            <button>Chốt đơn</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="wrapper">
+            <div class="d-flex justify-around">
+                <div class="end">
+                    <img class="end1" src="./images/trangchu/Bách dIệp.png" alt="">
+                    <ul>
+                        <li>7999-999-999</li>
+                        <li>trasenbachdiep@gamil.com</li>
+                        <li>số 12, Quảng An, Tây Hồ, Hà Nội</li>
+                    </ul>
+                </div>
+                <div class="end">
+                    <h1 class="end1">Về chúng tôi</h1>
+                    <ul>
+                        <li>Giới thiệu</li>
+                        <li>Sản phẩm</li>
+                        <li>Tin tức</li>
+                    </ul>
+                </div>
+                <div class="end">
+                    <h1 class="end1">Liên hệ</h1>
+                    <ul>
+                        <img  src="./images/trangchu/Layer 28.png" alt="">
+                        <li class="end2">Copyright @ 2010-2020</li>
+                        <li class="end2">Tra Sen Bach Diep. All rights recerved</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script>
+        new WOW().init();
+    </script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
